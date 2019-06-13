@@ -3,7 +3,7 @@
 cd "/Users/admin/Dropbox/R/Backend/WebsiteTables/"
 
 #/usr/bin/git pull origin
-Rscript CreateTables.R
+/usr/local/bin/Rscript CreateTables.R
 
 /usr/bin/git checkout master
 /usr/bin/git add .
