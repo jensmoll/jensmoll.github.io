@@ -9,13 +9,13 @@ getScriptPath <- function(){
 dir <- getScriptPath()
 setwd(dir)
 
-library("git2r")
+# library("git2r")
 library("tableHTML")
-source("GitFunctions.R")
+# source("GitFunctions.R")
 
 # Git configuration
-git2r::config(user.name = "riverfieldtt",
-              user.email = "onlineaccounts@riverfieldtt.ch")
+# git2r::config(user.name = "riverfieldtt",
+#               user.email = "onlineaccounts@riverfieldtt.ch")
 
 
 my.table = read.csv("../../../CSV/NAVextract.csv", header = FALSE, sep = ";", dec = ".")
@@ -73,7 +73,7 @@ t4 = add_theme(t4, "scientific")
 write_tableHTML(t4, file = 'allrounder.html')
 
 # Commit to github!
-gitadd()
-gitcommit()
-gitpush()
+# gitadd()
+# gitcommit()
+# gitpush()
 
